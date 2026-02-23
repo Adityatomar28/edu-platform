@@ -12,7 +12,8 @@ class DatabaseConnection{
         this.retryCount = 0
         this.isConnected = false
          
-        //configure mongoose setting
+        //configure mongoose setting 
+        // strictQuery ensures that query filters only use fields defined in the schema. Unknown fields are ignored before the query is sent to MongoDB. It helps prevent accidental bugs and adds safety when filtering using user input.
         mongoose.set("strictQuery",true);
 
         mongoose.connection.on('connected',()=>{
@@ -43,7 +44,8 @@ class DatabaseConnection{
             useUnifiedTopology:true,
             maxPoolSize:10,
             serverSelectionTimeoutMS:5000,
-            socketTimeoutMS:45000,
+            // Prevent dead TCP connectio
+            socketTimeoutMS:45000, 
             family:4 //use IPv4
         
         };
