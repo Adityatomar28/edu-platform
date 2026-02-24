@@ -7,6 +7,8 @@ import helmet from 'helmet';
 import hpp from 'hpp';
 import cors from "cors";
 import cookieParser from 'cookie-parser';
+import { checkHealth } from './controllers/health.controllers';
+import healthRoutes from './routes/health.routes.js'
 dotenv.config();
 console.log(process.env.PORT);
 
@@ -73,6 +75,7 @@ app.use(cors({
 
 
 //Api Routes
+app.use("/health",healthRoutes);
 
 
 

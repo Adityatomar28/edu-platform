@@ -98,7 +98,7 @@ UserSchema.methods.getResetPasswordToken = function(){
 
         // one token is sent to te database and one token is sent to user 
 }
-//Virtuals ->calacuaktive filed suppose i want to find how mnay course you are enrolled in ?
+//Virtuals ->calacualative filed suppose i want to find how mnay course you are enrolled in ?
 // UserSchema.methods.updateLastActive = function(){
     this.lastActive = Date.now()
     return this.lastActive({validateBeforeSave:false});
