@@ -14,8 +14,6 @@ This system allows instructors to create courses, upload lectures, and students 
 - Add lectures to courses
 - View enrolled students
 
-👉 Courses are created with thumbnail upload & instructor linking :contentReference[oaicite:0]{index=0}  
-
 ---
 
 ### 👨‍🎓 Student Features
@@ -24,7 +22,6 @@ This system allows instructors to create courses, upload lectures, and students 
 - Track lecture progress
 - Mark course as completed
 
-👉 Completion percentage is calculated from lecture progress :contentReference[oaicite:1]{index=1}  
 
 ---
 
@@ -32,8 +29,6 @@ This system allows instructors to create courses, upload lectures, and students 
 - Stripe Checkout
 - Razorpay Payment Verification
 - Purchase records stored in database
-
-👉 Stripe checkout session implementation :contentReference[oaicite:2]{index=2}  
 
 ---
 
@@ -43,7 +38,6 @@ This system allows instructors to create courses, upload lectures, and students 
 - Password hashing with bcrypt
 - Secure cookies
 
-👉 JWT token generation handled here :contentReference[oaicite:3]{index=3}  
 
 ---
 
@@ -51,14 +45,10 @@ This system allows instructors to create courses, upload lectures, and students 
 - Cloudinary video & image storage
 - File uploads using Multer
 
-👉 Cloudinary upload utility :contentReference[oaicite:4]{index=4}  
-
 ---
 
 ### 📊 Health Monitoring
 - API to check server & database health
-
-👉 Health check endpoint :contentReference[oaicite:5]{index=5}  
 
 ---
 
